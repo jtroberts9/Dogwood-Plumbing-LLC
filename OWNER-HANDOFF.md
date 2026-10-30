@@ -32,45 +32,69 @@ business itself.
 | Services: water heaters, leak repair, sump/sewage/septic pumps | Company service descriptions in public listings |
 | "Why Dogwood" — state flower angle | The flowering dogwood is Virginia's state flower & tree (marketing angle we added — confirm the owner likes it) |
 
-## Things the owner must confirm or provide
+## Ask Patrick & Lacie
 
-1. **Photos.** Facebook blocks automated photo downloads, so every image spot is
-   a clearly-labeled placeholder. The owner has all these photos on their
-   Facebook page already — they just need to be dropped in (see README).
-   Priority order: (1) owner/family photo on the About page, (2) team/truck
-   photo on the homepage, (3) job photos on the Services page.
-2. **Names.** We deliberately did NOT put an owner name on the site until the
-   owner confirms how they want to be introduced ("Owned by …" on the About
-   page would be a great addition).
-2b. **Reviews — the biggest open item.** With the HomeAdvisor/Angi/Thumbtack
-   content removed, the only verifiable social proof left on the site is the
-   Facebook "100% recommended" line. The Reviews page and the homepage review
-   section now hold clearly-marked placeholder cards. To fill them in:
-   paste real reviews from the **Google Business Profile** (preferred) or
-   Facebook, and add the Google star rating and review count to the placeholder
-   stat on the Reviews page. Also drop the Google review link into the
-   "Review us on Google" button (currently `href="#"`).
-3. ~~**License number.**~~ **DONE** — Virginia License **#2705193552**, confirmed
-   by the owner, now appears in the footer of all five pages, in the About page
-   credentials list, and in the homepage structured data.
+Things to raise with the owners. Nothing here blocks the site from working —
+these are accuracy checks and easy wins.
 
-   *(Original note kept for context:)* The site says "Licensed & Insured" (standard for a VA
-   plumbing contractor and consistent with their listings). Add the license
-   number to the footer for maximum trust — it's a top trust signal.
-4. **Service-area towns.** Front Royal + Warren County are confirmed. The
-   nearby towns listed (Linden, Bentonville, Browntown, Riverton, Middletown,
-   Strasburg) are reasonable neighbors clearly labeled "call to confirm" —
-   the owner should confirm or edit the list.
-5. **Business address.** The LLC's registered address (241 Cedar Top Lane) was
-   deliberately left OFF the site — home-based service businesses generally
-   shouldn't publish a home address. Service-area wording is used instead.
-6. **Facebook recommendations.** Six recommendations exist on the Facebook
-   page. Placeholder cards on the Reviews page are ready for them (get
-   reviewers' OK before naming them).
-7. **Quote form delivery.** The form currently opens the visitor's email app,
-   pre-filled, addressed to the company Gmail — functional with zero setup.
-   Connecting a free Formspree account makes it submit silently in-page
+1. **Nudge customers to name their town in Google reviews.** When a job goes
+   well, ask the customer to mention where they are — "came out to our place in
+   Winchester," "fixed our water heater in Warrenton." This is the single
+   cheapest thing the owners can do for search results. Google weighs a
+   customer's own words more heavily than anything the business writes about
+   itself, so a handful of reviews naming Winchester, Warrenton, or Manassas
+   will do more for those searches than any page we could add. It also builds
+   the material needed if dedicated town pages are ever revisited.
+2. **Confirm four facts carried over from the old HomeAdvisor listing.** All
+   four are live on the site right now and none has been verified by the
+   owners. If any are wrong it's a quick find-and-replace:
+   - "6+ years experience" (homepage, Reviews page)
+   - "Mon–Fri, 9:00 AM – 5:00 PM" (all five pages)
+   - "10% off for military, veterans & first responders" (all five pages)
+   - "24/7 emergency availability" (all five pages)
+3. **Two photos still needed.**
+   - `images/owner-family.jpg` — a friendly photo of Patrick and Lacie. This is
+     the last placeholder on the site and the highest-trust image on a
+     family-business page. Alt text and caption are already written.
+   - A real truck photo to replace `images/PlumbingTruck.jpg` on the homepage,
+     which is AI-generated and carries a visible watermark.
+4. **Direct Google review link.** The "Review us on Google" button currently
+   falls back to a Google search. The direct link (from the Google Business
+   Profile → Ask for reviews → copy link, of the form
+   `https://g.page/r/XXXXXXXX/review`) opens the review box in one tap. Belongs
+   in `reviews.html`.
+5. **The old Wix site.** Still advertises *free* estimates, *copper repiping*,
+   and *1,000+ customers* — all three now inaccurate. Needs correcting or
+   taking down so the two sites don't contradict each other.
+6. **Quote form delivery.** The form currently opens the visitor's own email
+   app, pre-filled and addressed to the company Gmail — functional with zero
+   setup, but it loses anyone without a configured mail client. A free
+   Formspree account makes it submit silently in-page. **The account should be
+   the owners' own**, since it receives their customer lead data
    (instructions in `js/main.js`).
+
+### Settled — no action needed
+
+- **License number.** Virginia License **#2705193552**, confirmed by the owners.
+  Appears in the footer of all five pages, the About page credentials list, and
+  the homepage structured data.
+- **Owner names.** Patrick and Lacie Moore are named on the About page and as
+  schema.org `founder` entries in the homepage structured data.
+- **Service-area towns.** The owners' confirmed ten: Front Royal, Bentonville,
+  Luray, Stephens City, Winchester, Warrenton, Haymarket, Gainesville,
+  Nokesville, Manassas — all Virginia. Live across every page, footer, meta
+  description, and the JSON-LD `areaServed`.
+- **Reviews.** Six real reviews are in place — three Google, three Facebook —
+  attributed as "Verified Google Customer" and "Facebook Verified Customer" at
+  the maintainer's request, with no real names. The 4.9 Google rating is shown;
+  the review *count* is deliberately omitted because it changes and the site
+  would go stale.
+- **Business address.** The LLC's registered address was deliberately left OFF
+  the site — home-based service businesses generally shouldn't publish a home
+  address. Service-area wording is used instead.
+- **Town pages.** Considered and declined. Near-duplicate per-town pages risk
+  being treated as doorway pages by Google. Revisit only with genuinely
+  town-specific material (see item 1).
 
 ## Design decisions worth mentioning in the pitch
 
