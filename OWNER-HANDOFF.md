@@ -37,32 +37,8 @@ business itself.
 Things to raise with the owners. Nothing here blocks the site from working —
 these are accuracy checks and easy wins.
 
-1. **Claim the Google Business Profile — highest-priority item on this project.**
-   As of Oct 2026 the listing does not appear to come up in a Google Maps
-   search, but the profile demonstrably exists: three Google reviews and a 4.9
-   rating were pulled from it in Aug 2026 and are quoted on the Reviews page.
-   So it is either unverified, thinly filled in, or has been suspended.
-
-   **Claim the existing listing — do not create a new one.** Reviews do not
-   transfer between listings. Creating a duplicate strands the 4.9 rating and
-   every existing review on an orphaned profile, and duplicate listings are
-   difficult to get merged afterwards.
-
-   Start at **https://business.google.com** and search for the business; Google
-   will offer to let the owner claim it rather than create it if it finds the
-   existing record. Verification is usually by postcard, phone, or video.
-
-   Worth being blunt with the owners about why this outranks the website: for a
-   local plumber, the Google Business Profile drives more phone calls than the
-   website does. It is what populates the map pack — the three businesses shown
-   above the normal search results. A plumber with a complete, verified profile
-   and a website will beat a plumber with a website alone, every time. Nothing
-   else on this list comes close in value.
-
-   Once claimed, fill in: service area (the ten towns), hours, services,
-   license number, phone, website URL, and photos — the same real job photos
-   used on the Services page.
-2. **Nudge customers to name their town in Google reviews.** When a job goes
+1. **Nudge customers to name their town in Google reviews.** *Applies once the
+   Google profile is back up (item 7).* When a job goes
    well, ask the customer to mention where they are — "came out to our place in
    Winchester," "fixed our water heater in Warrenton." This is the single
    cheapest thing the owners can do for search results. Google weighs a
@@ -70,34 +46,68 @@ these are accuracy checks and easy wins.
    itself, so a handful of reviews naming Winchester, Warrenton, or Manassas
    will do more for those searches than any page we could add. It also builds
    the material needed if dedicated town pages are ever revisited.
-3. **Confirm four facts carried over from the old HomeAdvisor listing.** All
+2. **Confirm four facts carried over from the old HomeAdvisor listing.** All
    four are live on the site right now and none has been verified by the
    owners. If any are wrong it's a quick find-and-replace:
    - "6+ years experience" (homepage, Reviews page)
    - "Mon–Fri, 9:00 AM – 5:00 PM" (all five pages)
    - "10% off for military, veterans & first responders" (all five pages)
    - "24/7 emergency availability" (all five pages)
-4. **Two photos still needed.**
+3. **Two photos still needed.**
    - `images/owner-family.jpg` — a friendly photo of Patrick and Lacie. This is
      the last placeholder on the site and the highest-trust image on a
      family-business page. Alt text and caption are already written.
    - A real truck photo to replace `images/PlumbingTruck.jpg` on the homepage,
      which is AI-generated and carries a visible watermark.
-5. **Direct Google review link.** *Blocked on item 1 — the profile has to be
-   claimed first.* The "Review us on Google" button currently falls back to a
+4. **Direct Google review link.** *Blocked on item 7 — there has to be a live
+   profile to link to.* The "Review us on Google" button currently falls back to a
    Google search. The direct link (from the Google Business
    Profile → Ask for reviews → copy link, of the form
    `https://g.page/r/XXXXXXXX/review`) opens the review box in one tap. Belongs
    in `reviews.html`.
-6. **The old Wix site.** Still advertises *free* estimates, *copper repiping*,
+5. **The old Wix site.** Still advertises *free* estimates, *copper repiping*,
    and *1,000+ customers* — all three now inaccurate. Needs correcting or
    taking down so the two sites don't contradict each other.
-7. **Quote form delivery.** The form currently opens the visitor's own email
+6. **Quote form delivery.** The form currently opens the visitor's own email
    app, pre-filled and addressed to the company Gmail — functional with zero
    setup, but it loses anyone without a configured mail client. A free
    Formspree account makes it submit silently in-page. **The account should be
    the owners' own**, since it receives their customer lead data
    (instructions in `js/main.js`).
+
+7. **Re-create the Google Business Profile when the business restarts.** The
+   owners removed themselves from Google during a pause in the business and
+   plan to start back up soon. Nothing needs doing until then.
+
+   When they do restart, this is the highest-value marketing item available to
+   them — for a local plumber the Business Profile drives more phone calls than
+   the website does, because it populates the map pack (the three businesses
+   Google shows above the normal search results). A plumber with a verified
+   profile and a website beats a plumber with a website alone.
+
+   Start at **https://business.google.com**. Search for the business first in
+   case any trace of the old listing remains and can be claimed rather than
+   recreated. Verification is usually by postcard, phone, or video.
+
+   Then fill in: service area (the ten towns), hours, services, license number,
+   phone, website URL, and photos — the same real job photos used on the
+   Services page.
+
+   **Set expectations on the old reviews.** If the previous profile was
+   deleted, the three Google reviews and the 4.9 rating most likely do not come
+   back with it — reviews belong to the listing, and a deleted listing takes
+   them with it. The review *text* is preserved on the Reviews page either way,
+   because it was copied across in Aug 2026. But see the note below about the
+   rating claim.
+
+   **While there is no live profile**, the site still shows a "4.9 on Google"
+   chip on the homepage, a 4.9 rating summary on the Reviews page, and a
+   "Review us on Google" button that falls back to a Google search. Those point
+   at something a visitor cannot currently verify. The quoted reviews are real
+   and were genuinely left by customers, so quoting them is honest; the live
+   *rating* claim is the part that has nothing behind it right now. Worth a
+   decision from the maintainer: leave it and swap the link back in when the
+   profile returns, or soften the rating claim until then.
 
 ### Settled — no action needed
 
