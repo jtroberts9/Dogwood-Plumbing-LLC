@@ -20,12 +20,15 @@ business itself.
 
 | Fact on the site | Source |
 |---|---|
-| Family-operated, veteran-owned; "highest level of integrity and expertise"; 6+ years experience; all phases of residential plumbing | Originally from the HomeAdvisor/Angi profile text — **confirm still accurate** |
+| Family-operated, veteran-owned; "highest level of integrity and expertise"; 8+ years of plumbing experience; all phases of residential plumbing | Profile text originally from HomeAdvisor/Angi. Experience figure **confirmed by the owners, Nov 2026**: 8+ years of plumbing, 2+ years in business. Only the 8+ figure is shown on the site |
 | Phone (540) 497-3174 · email dogwoodplumbingva@gmail.com | Public listings tied to the Facebook page |
 | 100% recommended on Facebook | Facebook page (facebook.com/Dogwoodplumbingllc) |
 | 4.9-star Google rating | Reported by the owner from the Google Business Profile. Google blocks automated access, so this was not independently verified — **re-check before launch.** No review *count* is shown anywhere by design: this is a static site, so a hard-coded count goes stale as soon as the next review arrives. If the star rating itself ever changes, it appears in five places — Reviews page stat, homepage hero chip, homepage stat card, homepage badge row, and About page credentials |
-| "Hundreds of customers" · 24/7 availability | 24/7 availability is from the company's existing site (dogwoodplumbva.com), which also claimed "trusted by more than 1,000 customers." The owner revised that figure down to hundreds, and the site now says hundreds. **The old site still says 1,000+ — update it to match.** |
-| Hours Mon–Fri 9–5 · credit cards accepted | Originally from the HomeAdvisor profile — **confirm still accurate** |
+| "Hundreds of customers" | The company's existing site (dogwoodplumbva.com) claimed "trusted by more than 1,000 customers." The owner revised that figure down to hundreds, and the site now says hundreds. **The old site still says 1,000+ — update it to match.** |
+| Emergency service, not 24/7 | **Owners confirmed Nov 2026 that they do NOT offer 24/7 service.** Every 24/7 and "around the clock" claim was removed. Emergencies are taken Mon–Fri and on Saturdays (emergencies only). The old site may still say 24/7 |
+| Hours Mon–Fri 9–5, Saturday emergencies only, Sunday closed | **Confirmed by the owners, Nov 2026** |
+| 10% military / veteran / first-responder discount | **Confirmed by the owners, Nov 2026** |
+| Credit cards accepted | Originally from the HomeAdvisor profile — not yet confirmed |
 | "Fast estimates" wording | Owner's preference |
 | 10% military / veteran / first responder discount | Originally from the HomeAdvisor/Angi profiles — **confirm still offered** |
 | Services: drain cleaning, toilet repair, residential plumbing | The company's existing site pages. (Copper repiping was listed there too, but the owner confirmed it is no longer offered, so it has been removed from the site.) |
@@ -37,8 +40,7 @@ business itself.
 Things to raise with the owners. Nothing here blocks the site from working —
 these are accuracy checks and easy wins.
 
-1. **Nudge customers to name their town in Google reviews.** *Applies once the
-   Google profile is back up (item 7).* When a job goes
+1. **Nudge customers to name their town in Google reviews.** When a job goes
    well, ask the customer to mention where they are — "came out to our place in
    Winchester," "fixed our water heater in Warrenton." This is the single
    cheapest thing the owners can do for search results. Google weighs a
@@ -46,27 +48,23 @@ these are accuracy checks and easy wins.
    itself, so a handful of reviews naming Winchester, Warrenton, or Manassas
    will do more for those searches than any page we could add. It also builds
    the material needed if dedicated town pages are ever revisited.
-2. **Confirm four facts carried over from the old HomeAdvisor listing.** All
-   four are live on the site right now and none has been verified by the
-   owners. If any are wrong it's a quick find-and-replace:
-   - "6+ years experience" (homepage, Reviews page)
-   - "Mon–Fri, 9:00 AM – 5:00 PM" (all five pages)
-   - "10% off for military, veterans & first responders" (all five pages)
-   - "24/7 emergency availability" (all five pages)
+2. ~~**Confirm four facts carried over from the old HomeAdvisor listing.**~~
+   **Answered Nov 2026** — see the fact table above. Two were right (hours,
+   discount) and two were wrong (experience is 8+ years of plumbing, not 6+;
+   there is no 24/7 service). The site has been corrected.
 3. **Two photos still needed.**
    - `images/owner-family.jpg` — a friendly photo of Patrick and Lacie. This is
      the last placeholder on the site and the highest-trust image on a
      family-business page. Alt text and caption are already written.
    - A real truck photo to replace `images/PlumbingTruck.jpg` on the homepage,
      which is AI-generated and carries a visible watermark.
-4. **Direct Google review link.** *Blocked on item 7 — there has to be a live
-   profile to link to.* The "Review us on Google" button currently falls back to a
-   Google search. The direct link (from the Google Business
-   Profile → Ask for reviews → copy link, of the form
-   `https://g.page/r/XXXXXXXX/review`) opens the review box in one tap. Belongs
-   in `reviews.html`.
+4. **Direct Google review link.** The "Review us on Google" button now points
+   at the owners' profile share link (`https://share.google/n16piik2tAwDMfBIW`),
+   which opens the business profile. Optional upgrade: the one-tap review link
+   from the Google Business Profile → Ask for reviews → copy link, of the form
+   `https://g.page/r/XXXXXXXX/review`. Belongs in `reviews.html`.
 5. **The old Wix site.** Still advertises *free* estimates, *copper repiping*,
-   and *1,000+ customers* — all three now inaccurate. Needs correcting or
+   and *1,000+ customers* — all three now inaccurate, and check it for 24/7 claims too. Needs correcting or
    taking down so the two sites don't contradict each other.
 6. **Quote form delivery.** The form currently opens the visitor's own email
    app, pre-filled and addressed to the company Gmail — functional with zero
@@ -75,39 +73,18 @@ these are accuracy checks and easy wins.
    the owners' own**, since it receives their customer lead data
    (instructions in `js/main.js`).
 
-7. **Re-create the Google Business Profile when the business restarts.** The
-   owners removed themselves from Google during a pause in the business and
-   plan to start back up soon. Nothing needs doing until then.
+7. **Check the star rating on the Google profile.** The owners put the Google
+   Business Profile back up in Nov 2026. The site shows a 4.9 Google rating in
+   five places (see the fact table), a figure taken from the profile in
+   Aug 2026 before it came down. Google blocks automated access, so nobody has
+   confirmed the relisted profile still shows 4.9 or still carries the old
+   reviews. **Open the profile and compare before launch**; if the number
+   differs, or the profile shows no rating yet, change or remove it.
 
-   When they do restart, this is the highest-value marketing item available to
-   them — for a local plumber the Business Profile drives more phone calls than
-   the website does, because it populates the map pack (the three businesses
-   Google shows above the normal search results). A plumber with a verified
-   profile and a website beats a plumber with a website alone.
-
-   Start at **https://business.google.com**. Search for the business first in
-   case any trace of the old listing remains and can be claimed rather than
-   recreated. Verification is usually by postcard, phone, or video.
-
-   Then fill in: service area (the ten towns), hours, services, license number,
-   phone, website URL, and photos — the same real job photos used on the
+   Also worth doing on the profile itself: service area (the ten towns), hours
+   (Mon–Fri 9–5, Saturday emergencies only), services, license number, phone,
+   website URL once the domain is live, and the real job photos from the
    Services page.
-
-   **Set expectations on the old reviews.** If the previous profile was
-   deleted, the three Google reviews and the 4.9 rating most likely do not come
-   back with it — reviews belong to the listing, and a deleted listing takes
-   them with it. The review *text* is preserved on the Reviews page either way,
-   because it was copied across in Aug 2026. But see the note below about the
-   rating claim.
-
-   **While there is no live profile**, the site still shows a "4.9 on Google"
-   chip on the homepage, a 4.9 rating summary on the Reviews page, and a
-   "Review us on Google" button that falls back to a Google search. Those point
-   at something a visitor cannot currently verify. The quoted reviews are real
-   and were genuinely left by customers, so quoting them is honest; the live
-   *rating* claim is the part that has nothing behind it right now. Worth a
-   decision from the maintainer: leave it and swap the link back in when the
-   profile returns, or soften the rating claim until then.
 
 ### Settled — no action needed
 
