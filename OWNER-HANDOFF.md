@@ -23,7 +23,7 @@ business itself.
 | Family-operated, veteran-owned; "highest level of integrity and expertise"; 8+ years of plumbing experience; all phases of residential plumbing | Profile text originally from HomeAdvisor/Angi. Experience figure **confirmed by the owners, Nov 2026**: 8+ years of plumbing, 2+ years in business. Only the 8+ figure is shown on the site |
 | Phone (540) 497-3174 · email dogwoodplumbingva@gmail.com | Public listings tied to the Facebook page |
 | 100% recommended on Facebook | Facebook page (facebook.com/Dogwoodplumbingllc) |
-| 4.9-star Google rating | Reported by the owner from the Google Business Profile. Google blocks automated access, so this was not independently verified — **re-check before launch.** No review *count* is shown anywhere by design: this is a static site, so a hard-coded count goes stale as soon as the next review arrives. If the star rating itself ever changes, it appears in five places — Reviews page stat, homepage hero chip, homepage stat card, homepage badge row, and About page credentials |
+| 4.9-star Google rating | Reported by the owner from the Google Business Profile in Aug 2026, and **re-confirmed by the maintainer on the relisted profile in Nov 2026.** No review *count* is shown anywhere by design: this is a static site, so a hard-coded count goes stale as soon as the next review arrives. If the star rating itself ever changes, it appears in five places — Reviews page stat, homepage hero chip, homepage stat card, homepage badge row, and About page credentials |
 | "Hundreds of customers" | The company's existing site (dogwoodplumbva.com) claimed "trusted by more than 1,000 customers." The owner revised that figure down to hundreds, and the site now says hundreds. **The old site still says 1,000+ — update it to match.** |
 | Emergency service, not 24/7 | **Owners confirmed Nov 2026 that they do NOT offer 24/7 service.** Every 24/7 and "around the clock" claim was removed. Emergencies are taken Mon–Fri and on Saturdays (emergencies only). The old site may still say 24/7 |
 | Hours Mon–Fri 9–5, Saturday emergencies only, Sunday closed | **Confirmed by the owners, Nov 2026** |
@@ -73,13 +73,8 @@ these are accuracy checks and easy wins.
    the owners' own**, since it receives their customer lead data
    (instructions in `js/main.js`).
 
-7. **Check the star rating on the Google profile.** The owners put the Google
-   Business Profile back up in Nov 2026. The site shows a 4.9 Google rating in
-   five places (see the fact table), a figure taken from the profile in
-   Aug 2026 before it came down. Google blocks automated access, so nobody has
-   confirmed the relisted profile still shows 4.9 or still carries the old
-   reviews. **Open the profile and compare before launch**; if the number
-   differs, or the profile shows no rating yet, change or remove it.
+7. ~~**Check the star rating on the Google profile.**~~ **Done, Nov 2026** —
+   the relisted profile still shows 4.9, so the site's rating claim stands.
 
    Also worth doing on the profile itself: service area (the ten towns), hours
    (Mon–Fri 9–5, Saturday emergencies only), services, license number, phone,
